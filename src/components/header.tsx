@@ -161,10 +161,10 @@ const navLinks = [
     title: "About",
     path: "/about-us",
   },
-  {
-    title: "Alumni",
-    path: "/alumni",
-  },
+  // {
+  //   title: "Alumni",
+  //   path: "/alumni",
+  // },
   {
     title: "Contact",
     path: "/contact",

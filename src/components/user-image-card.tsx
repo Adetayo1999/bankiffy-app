@@ -9,7 +9,7 @@ export const UserImageCard: React.FC<{
 }> = (props) => {
   return (
     <motion.div
-      className="rounded-2xl md:rounded-[3.125rem] overflow-hidden h-64 md:h-80 lg:h-113 bg-[#DEDEE0]"
+      className="rounded-2xl md:rounded-[3.125rem] relative overflow-hidden h-64 md:h-80 lg:h-113 bg-[#DEDEE0]"
       initial={{ opacity: 0, y: 30, scale: 0.95 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: "-50px" }}
@@ -28,8 +28,10 @@ export const UserImageCard: React.FC<{
       <Image
         src={props.image}
         alt="User Profile Image"
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover grayscale"
       />
+
+      {/* <div className="absolute top-0 left-0 w-full h-full bg-red-500" /> */}
     </motion.div>
   );
 };

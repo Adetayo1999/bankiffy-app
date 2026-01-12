@@ -11,7 +11,7 @@ export default function Team() {
       <WhatWeDo />
       <AdvisoryBoard />
       <OurTeam />
-      <OurMentors />
+      {/* <OurMentors /> */}
     </div>
   );
 }

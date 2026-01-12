@@ -6,6 +6,7 @@ import directionImage from "@/images/direction.png";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import SupportedCountriesMap from "./supported-countries-map";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -53,7 +54,7 @@ export const GetInTouch = () => {
 
   const socialIcons = [
     {
-      href: "/",
+      href: "https://www.tiktok.com/@bankiffyaccelerat?_r=1&_t=ZS-930UZTfC3qD",
       icon: (
         <svg
           width="23"
@@ -71,7 +72,7 @@ export const GetInTouch = () => {
       ),
     },
     {
-      href: "/",
+      href: "https://www.linkedin.com/in/bankiffy-accelerator-4946b03a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       icon: (
         <svg
           width="21"
@@ -89,7 +90,7 @@ export const GetInTouch = () => {
       ),
     },
     {
-      href: "/",
+      href: "https://www.instagram.com/bankiffyaccelerator?igsh=MW9vdzZ3eWpwMDFocg==",
       icon: (
         <svg
           width="21"
@@ -119,7 +120,7 @@ export const GetInTouch = () => {
       ),
     },
     {
-      href: "/",
+      href: "https://youtube.com/@bankiffyaccelerator?si=fp5yB9wD49pmQQEM",
       icon: (
         <svg
           width="23"
@@ -148,29 +149,31 @@ export const GetInTouch = () => {
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.7 }}
     >
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-x-20 mb-10 md:mb-22.5">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-x-20 mb-10 md:mb-22.5 ">
         <motion.div
-          className="lg:col-span-6"
+          className="lg:col-span-12 flex flex-col md:flex-row justify-between md:gap-x-10"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          <motion.h2
-            className="text-2xl md:text-3xl lg:text-[3.125rem] font-bold leading-[100%] mb-4 md:mb-7"
-            variants={itemVariants}
-          >
-            We're here to <br /> connect
-          </motion.h2>
-          <motion.p
-            className="text-sm md:text-base lg:text-xl mb-10 md:mb-24"
-            variants={itemVariants}
-          >
-            Have questions about the summit? Need help with registration or
-            travel? Our team is ready to assist you.
-          </motion.p>
+          <div className="md:flex-[0.45]">
+            <motion.h2
+              className="text-2xl md:text-3xl lg:text-[3.125rem] font-bold leading-[100%] mb-4 md:mb-7"
+              variants={itemVariants}
+            >
+              We&apos;re Here To <br /> Connect
+            </motion.h2>
+            <motion.p
+              className="text-sm md:text-base lg:text-xl mb-10 md:mb-24"
+              variants={itemVariants}
+            >
+              Have questions about the summit? Need help with registration or
+              travel? Our team is ready to assist you.
+            </motion.p>
+          </div>
 
           <motion.div
-            className="grid grid-cols-2 gap-6 md:gap-10 lg:gap-20"
+            className="grid grid-cols-2 gap-6 md:gap-10 lg:gap-20 md:flex-[0.5] shrink-0"
             variants={containerVariants}
           >
             <motion.div variants={itemVariants}>
@@ -217,14 +220,16 @@ export const GetInTouch = () => {
                     initial="rest"
                     whileHover="hover"
                   >
-                    <Link href={social.href}>{social.icon}</Link>
+                    <Link href={social.href} target="_blank">
+                      {social.icon}
+                    </Link>
                   </motion.div>
                 ))}
               </div>
             </motion.div>
           </motion.div>
         </motion.div>
-
+        {/* 
         <motion.div
           className="bg-[#DEDEE0] text-[#1C1A1A] px-6 md:px-10 lg:px-15 py-8 md:py-12 lg:py-[4.688rem] rounded-2xl md:rounded-[3.125rem] lg:col-span-6"
           initial={{ opacity: 0, x: 50, scale: 0.98 }}
@@ -297,21 +302,23 @@ export const GetInTouch = () => {
               Send message
             </motion.button>
           </form>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       <motion.div
-        className="h-48 sm:h-64 md:h-80 lg:h-142.5 w-full rounded-2xl md:rounded-[3.125rem] overflow-hidden"
+        className="h-80 sm:h-96 md:h-[420px] lg:h-[500px] xl:h-[600px] w-full rounded-2xl md:rounded-[3.125rem] overflow-hidden"
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.7, delay: 0.4 }}
         whileHover={{ scale: 1.01 }}
       >
-        <Image
+        {/* <Image
           src={directionImage}
           alt="direction"
           className="w-full h-full object-cover"
-        />
+        /> */}
+
+        <SupportedCountriesMap />
       </motion.div>
     </motion.div>
   );

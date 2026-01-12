@@ -102,26 +102,24 @@ export const ProblemStatement = () => {
           OUR APPROACH
         </motion.h3>
         <motion.div
-          className="bg-[#1A1A1A] text-white text-base md:text-lg lg:text-[1.813rem] p-6 md:p-9 rounded-2xl md:rounded-[3.125rem]"
+          className="bg-[#1A1A1A] text-white text-base md:text-lg lg:text-[1.5rem] p-6 md:p-9 rounded-2xl md:rounded-[3.125rem]"
           whileHover={{ scale: 1.01, transition: { duration: 0.3 } }}
         >
           <p>
-            Bankiffy Financial Inclusion Program support founders with pre-built
-            digital finance app to deliver financial services in their
-            communities.
-            <br />
-            <br />
-            Bankiffy reduces launch times from years to minutes, allowing
-            founders to focus on user acquisition and impact—directly aligning
-            with Bankiffy&apos;s KPI-driven $25,000 grants for signups and
-            transactions.
-            <br />
-            <br /> Imagine launching your fintech venture with enterprise-grade
-            tools at zero cost, backed by Fuspay&apos;s $10 million commitment
-            to Africa&apos;s financial ecosystem. This isn&apos;t just
-            support—it&apos;s a launchpad for sustainable success, driving
-            community-level change and positioning your startup for exponential
-            growth.{" "}
+            The Bankiffy Fintech Accelerator Program equips founders with a
+            pre-built, enterprise-grade digital finance platform to rapidly
+            deploy financial services in underserved communities. <br />
+            <br /> By compressing product launch timelines from years to
+            minutes, Bankiffy enables founders to concentrate on user
+            acquisition, revenue generation, and measurable financial inclusion
+            outcomes. This efficiency is reinforced through KPI-driven grants of
+            up to $25,000, directly tied to user sign-ups and transaction
+            volumes—ensuring capital is deployed against real traction. <br />
+            <br /> Founders launch at zero upfront cost, leveraging proven
+            infrastructure backed by Fuspay’s $20 million commitment to Africa’s
+            financial ecosystem. This model significantly reduces execution
+            risk, accelerates time-to-market, and creates a scalable pipeline of
+            fintech startups positioned for sustainable growth.
           </p>
         </motion.div>
       </motion.div>

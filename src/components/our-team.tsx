@@ -5,7 +5,9 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { UserImageCard } from "./user-image-card";
 import { UserNameCard } from "./user-name-card";
-import boardMember1 from "@/images/advisory-board/avis-charles.png";
+import team1 from "@/images/team-member-1.png";
+import team2 from "@/images/team-member-2.png";
+import team3 from "@/images/team-member-3.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -67,19 +69,27 @@ export const OurTeam = () => {
           />
         </motion.div>
         <motion.div variants={itemVariants}>
-          <UserImageCard image={boardMember1} />
+          <UserImageCard image={team1} />
         </motion.div>
         <motion.div variants={itemVariants}>
           <UserNameCard
-            name={<h1>Elon Park</h1>}
-            title={<p>CTO, DeepMind</p>}
+            name={
+              <h1>
+                Ebun <br /> Ade-Ajayi
+              </h1>
+            }
+            title={
+              <p>
+                Community <br /> Manager
+              </p>
+            }
           />
         </motion.div>
         <motion.div variants={itemVariants}>
-          <UserImageCard image={boardMember1} />
+          <UserImageCard image={team2} />
         </motion.div>
         <motion.div variants={itemVariants}>
-          <UserImageCard image={boardMember1} />
+          <UserImageCard image={team3} />
         </motion.div>
         <motion.div variants={itemVariants}>
           <UserNameCard
@@ -89,19 +99,6 @@ export const OurTeam = () => {
               </h1>
             }
             title={<p>Program Manager</p>}
-          />
-        </motion.div>
-        <motion.div variants={itemVariants}>
-          <UserImageCard image={boardMember1} />
-        </motion.div>
-        <motion.div variants={itemVariants}>
-          <UserNameCard
-            name={
-              <h1>
-                Dr. Alan <br /> Foster
-              </h1>
-            }
-            title={<p>Stanford AI Lab</p>}
           />
         </motion.div>
       </motion.div>

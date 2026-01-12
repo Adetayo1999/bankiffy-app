@@ -39,7 +39,7 @@ export const Newsletter = () => {
 
   const socialIcons = [
     {
-      href: "/",
+      href: "https://www.tiktok.com/@bankiffyaccelerat?_r=1&_t=ZS-930UZTfC3qD",
       icon: (
         <svg
           width="23"
@@ -56,7 +56,7 @@ export const Newsletter = () => {
       ),
     },
     {
-      href: "/",
+      href: "https://www.linkedin.com/in/bankiffy-accelerator-4946b03a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       icon: (
         <svg
           width="21"
@@ -73,7 +73,7 @@ export const Newsletter = () => {
       ),
     },
     {
-      href: "/",
+      href: "https://www.instagram.com/bankiffyaccelerator?igsh=MW9vdzZ3eWpwMDFocg==",
       icon: (
         <svg
           width="21"
@@ -102,7 +102,7 @@ export const Newsletter = () => {
       ),
     },
     {
-      href: "/",
+      href: "https://youtube.com/@bankiffyaccelerator?si=fp5yB9wD49pmQQEM",
       icon: (
         <svg
           width="23"
@@ -227,9 +227,9 @@ export const Newsletter = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            Bankiffy empowers fintech innovators to close Africa's financial
-            inclusion gap. We help founders launch scalable digital banking
-            solutions with minimal capital, offering hands-on training,
+            Bankiffy empowers fintech innovators to close Africa&apos;s
+            financial inclusion gap. We help founders launch scalable digital
+            banking solutions with minimal capital, offering hands-on training,
             real-time performance monitoring, and KPI-driven grants—$1 per
             active user, up to $25,000 per startup.
           </motion.p>
@@ -266,7 +266,7 @@ export const Newsletter = () => {
 const navigationLinks = [
   {
     title: "About",
-    path: "/",
+    path: "/about-us",
   },
   {
     title: "Terms & Conditions",
@@ -274,7 +274,7 @@ const navigationLinks = [
   },
   {
     title: "Team",
-    path: "/",
+    path: "/team",
   },
   {
     title: "Privacy Policy",
@@ -282,7 +282,7 @@ const navigationLinks = [
   },
   {
     title: "Apply Now",
-    path: "/",
+    path: "/apply",
   },
   {
     title: "Cookie Policy",
@@ -290,10 +290,10 @@ const navigationLinks = [
   },
   {
     title: "Contact",
-    path: "/",
+    path: "/contact",
   },
   {
     title: "FAQ",
-    path: "/",
+    path: "/contact",
   },
 ];

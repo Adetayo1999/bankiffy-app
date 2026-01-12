@@ -176,16 +176,24 @@ export const RegisterNow = () => {
       >
         <div className="">
           <motion.p
-            className="text-sm md:text-base lg:text-[1.25rem]"
+            className="text-sm md:text-base lg:text-[1rem] text-[#B2ADAD] mb-3"
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            Early Bird Pricing Ends In:
+            APPLICATION OPENS UNTIL
+          </motion.p>
+          <motion.p
+            className="text-sm md:text-base lg:text-[1.5rem]"
+            initial={{ opacity: 0 }}
+            animate={isInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ delay: 0.5 }}
+          >
+            APPLICATION CLOSES ON 15TH FEBRUARY 2025
           </motion.p>
 
           <motion.div
-            className="flex flex-wrap"
+            className="flex flex-wrap relative  z-100"
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}

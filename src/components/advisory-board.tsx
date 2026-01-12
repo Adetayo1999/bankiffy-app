@@ -5,7 +5,9 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import { UserImageCard } from "./user-image-card";
 import { UserNameCard } from "./user-name-card";
-import boardMember1 from "@/images/advisory-board/avis-charles.png";
+import boardMember1 from "@/images/advisory-board/board-member-1.png";
+import boardMember2 from "@/images/advisory-board/board-member-2.png";
+import boardMember3 from "@/images/advisory-board/board-member-3.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -83,10 +85,10 @@ export const AdvisoryBoard = () => {
           />
         </motion.div>
         <motion.div variants={itemVariants}>
-          <UserImageCard image={boardMember1} />
+          <UserImageCard image={boardMember2} />
         </motion.div>
         <motion.div variants={itemVariants}>
-          <UserImageCard image={boardMember1} />
+          <UserImageCard image={boardMember3} />
         </motion.div>
         <motion.div variants={itemVariants}>
           <UserNameCard

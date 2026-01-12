@@ -4,11 +4,10 @@ import Image from "next/image";
 import bannerImg from "@/images/banner-img.png";
 import { motion } from "framer-motion";
 
-import amazonImg from "@/images/amazon.svg";
-import dribbleImg from "@/images/dribble.svg";
-import hubspotImg from "@/images/hubspot.svg";
-import notionImg from "@/images/notion.svg";
-import gumRoadImg from "@/images/gumroad.svg";
+import nitaImg from "@/images/nita-logo.svg";
+import itexImg from "@/images/itex.svg";
+import nuMoniImg from "@/images/numoni.svg";
+import fuspayImg from "@/images/fuspay.svg";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -46,7 +45,7 @@ const logoVariants = {
 };
 
 export const HeroSection = () => {
-  const logos = [amazonImg, dribbleImg, hubspotImg, notionImg, gumRoadImg];
+  const logos = [nitaImg, itexImg, nuMoniImg, fuspayImg];
 
   return (
     <div className="">
@@ -69,7 +68,7 @@ export const HeroSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
-              FIP 2026 → Cohort 01
+              Bankiffy 2026 → Cohort 01
             </motion.button>
           </motion.div>
 
@@ -77,16 +76,17 @@ export const HeroSection = () => {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.063rem] leading-tight lg:leading-22.5 font-bold mb-4 md:mb-[2.063rem]"
             variants={itemVariants}
           >
-            FINANCIAL <br /> INCLUSION FOR <br /> AFRICA
+            Fintech <br className="hidden md:inline" /> Accelerator{" "}
+            <br className="hidden md:inline" /> for Africa
           </motion.h1>
 
           <motion.p
             className="text-sm md:text-base lg:text-lg xl:text-[1.375rem] mb-6 md:mb-[2.438rem]"
             variants={itemVariants}
           >
-            Join a community of diverse founders from underserved regions in
-            Africa, driving change in their communities through Bankiffy&apos;s
-            innovative programs.
+            Bankiffy Accelerator empowers bold entrepreneurs with the tools,
+            training, and support to launch fintech solutions that drive
+            meaningful change in their communities.
           </motion.p>
 
           <motion.div
@@ -147,7 +147,7 @@ export const HeroSection = () => {
             className="text-sm md:text-base lg:text-lg xl:text-[1.375rem] font-bold"
             variants={itemVariants}
           >
-            Opens → January 15th- February 15th, 2026
+            Opens → Feb 15th- March 10th, 2026
           </motion.p>
         </motion.div>
 
@@ -179,7 +179,7 @@ export const HeroSection = () => {
         </p>
 
         <motion.div
-          className="grid grid-cols-3 sm:grid-cols-5 gap-4 md:gap-x-5"
+          className="grid grid-cols-4 sm:grid-cols-4 gap-4 md:gap-x-5"
           variants={{
             hidden: { opacity: 0 },
             visible: {
@@ -195,7 +195,7 @@ export const HeroSection = () => {
               key={index}
               variants={logoVariants}
               whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-              className={index >= 3 ? "hidden sm:block" : ""}
+              // className={index >= 3 ? "hidden sm:block" : ""}
             >
               <Image
                 src={logo}
