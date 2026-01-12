@@ -12,7 +12,7 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: "Bankiffy",
   description:
-    "Join the community of diverse founders across different regions in Africa, driving change in their region through financial inclusive program of bankiffy.",
+    "Bankiffy Fintech is a Fintech Accelerator Program designed to equip founders & business to drive financial inclusion Africa",
 };
 
 export default function RootLayout({
