@@ -55,7 +55,7 @@ export const RegisterNow = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   // Target date: January 15th, 2026
-  const targetDate = useMemo(() => new Date("2026-01-15T00:00:00"), []);
+  const targetDate = useMemo(() => new Date("2026-02-15T23:59:00"), []);
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
