@@ -49,11 +49,11 @@ export const TicketOptions = () => {
       amount1: "$25,000",
       title1: "performance grant",
       desc1:
-        "Each startup is eligible for the Performance Grant, disbursed at $1 per new user completing up to two transactions, with a maximum award of $25,000.",
+        "Each startup is eligible for the Performance Grant, disbursed at $1 per new user completing up to three transactions, with a maximum award of $25,000.",
       title2: "Training",
       amount2: "$15,000",
       desc2:
-        "Learn to launch, grow, and scale your fintech venture with guidance from highly successful founders.",
+        "Launch, grow, and scale your fintech venture with guidance from highly successful founders.",
       isPrimary: true,
     },
     {
@@ -64,7 +64,7 @@ export const TicketOptions = () => {
       isPrimary: false,
     },
     {
-      amount1: "$15,000",
+      amount1: "$10,000",
       title1: "Hosting, ongoing support",
       desc1: (
         <>

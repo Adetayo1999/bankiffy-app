@@ -54,8 +54,8 @@ export const RegisterNow = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // Target date: January 15th, 2026
-  const targetDate = useMemo(() => new Date("2026-02-15T23:59:00"), []);
+  // Target date: February 15th, 2026 at 11:59 PM WAT (UTC+1)
+  const targetDate = useMemo(() => new Date("2026-03-31T23:59:00+01:00"), []);
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
@@ -117,8 +117,7 @@ export const RegisterNow = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
         >
           <p className="text-sm md:text-base lg:text-[1.25rem] mb-4 md:mb-5">
-            Secure your spot at the Next-Gen AI Summit 2052 and join the future
-            of AI innovation.
+            REGISTER NOW and join the future of AI innovation.
           </p>
 
           <motion.button
@@ -126,12 +125,15 @@ export const RegisterNow = () => {
               backgroundImage:
                 "linear-gradient(84.77deg, #0147FF 1.59%, rgba(1, 71, 255, 0) 121.45%)",
             }}
-            className="rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-8 md:px-12"
+            className="rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-8 md:px-12 cursor-pointer"
             whileHover={{
               scale: 1.03,
               boxShadow: "0 10px 40px rgba(1, 71, 255, 0.3)",
             }}
             whileTap={{ scale: 0.98 }}
+            onClick={() => {
+              window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");
+            }}
           >
             <span className="text-base md:text-lg lg:text-[1.4rem] font-medium">
               APPLY NOW
@@ -181,7 +183,7 @@ export const RegisterNow = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            APPLICATION OPENS UNTIL
+            APPLICATION OPENS FROM 20TH FEBRUARY UNTIL
           </motion.p>
           <motion.p
             className="text-sm md:text-base lg:text-[1.5rem]"
@@ -189,7 +191,7 @@ export const RegisterNow = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            APPLICATION CLOSES ON 15TH FEBRUARY 2025
+            APPLICATION CLOSES ON THE 31ST MARCH 2025
           </motion.p>
 
           <motion.div

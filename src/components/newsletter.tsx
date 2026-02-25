@@ -175,7 +175,7 @@ export const Newsletter = () => {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.8 }}
         >
-          © 2026 Bankiffy FIP 2026. All rights reserved.
+          © 2026 Bankiffy FIP. All rights reserved.
         </motion.p>
       </motion.div>
 

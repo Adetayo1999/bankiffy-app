@@ -42,21 +42,22 @@ export const Agenda = () => {
     {
       week: "Week 2",
       classes: "2 Classes",
-      title: "Fintech Mastery",
+      title: "Compliance, Risk & Operations",
       description:
         "Learn to build scalable fintech ventures with practical tools like Gain hands-on insights into running a fintech: niche selection, pricing, sales, user acquisition, and scaling",
     },
     {
       week: "Week 3",
       classes: "2 Classes",
-      title: "Investment Readiness",
+      title:
+        "Growth, Distribution & User AcquWeek 1: Fintech Foundation & Business Modelisition",
       description:
         "Prepare to attract funding with strategies for local investment, traction-building, non-equity funding, and effective investor pitching.",
     },
     {
       week: "Week 4",
       classes: "2 Classes",
-      title: "Platform Setup & Workshop",
+      title: "Platform Setup & Go-live",
       description:
         "Get your white-label fintech live on Fuspay with guided setup, customization, user management, and operational training to start onboarding users and earning KPI-driven grants.",
       hasButton: true,
@@ -91,8 +92,8 @@ export const Agenda = () => {
           }}
         >
           <p className="text-sm md:text-base lg:text-[1.25rem]">
-            A 1-month intensive journey for each team—turning fintech ideas into
-            fully operational, financially inclusive ventures.
+            A 1-month intensive journey for each “cohort”-turning fintech ideas
+            into fully operational, financially inclusive ventures.
           </p>
         </motion.div>
       </motion.div>

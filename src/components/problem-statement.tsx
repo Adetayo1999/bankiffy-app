@@ -52,19 +52,16 @@ export const ProblemStatement = () => {
             PROBLEM WE ARE SOLVING
           </motion.h3>
           <motion.div
-            className="text-white text-base md:text-lg lg:text-[1.813rem] flex-1 bg-[#20293F] rounded-2xl md:rounded-[3.125rem]"
+            className="text-white text-base md:text-lg lg:text-[1.813rem] flex-1 bg-[#20293F] rounded-2xl md:rounded-[3.125rem] py-8 md:py-12 px-6 md:px-8"
             whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           >
-            <ul className="list-disc flex flex-col gap-y-4 md:gap-y-8 py-8 md:py-12 px-8 md:px-15">
-              <li>
-                Over 400 million Africans remain unbanked, limiting economic
-                growth and entrepreneurship.
-              </li>
-              <li>
-                Fintech startups face barriers: High upfront capital, lack of
-                training, and monitoring.
-              </li>
-            </ul>
+            Bankiffy solves the problem of limited access to financial services
+            in underserved communities by removing the high cost, technical, and
+            regulatory barriers that prevent local founders from launching
+            fintech solutions. <br /> <br /> It equips entrepreneurs with
+            ready-to-use technology, banking infrastructure, training, and
+            performance-based funding—enabling them to deliver affordable
+            financial services in their communities.
           </motion.div>
         </motion.div>
 
@@ -106,20 +103,22 @@ export const ProblemStatement = () => {
           whileHover={{ scale: 1.01, transition: { duration: 0.3 } }}
         >
           <p>
-            The Bankiffy Fintech Accelerator Program equips founders with a
-            pre-built, enterprise-grade digital finance platform to rapidly
-            deploy financial services in underserved communities. <br />
-            <br /> By compressing product launch timelines from years to
-            minutes, Bankiffy enables founders to concentrate on user
-            acquisition, revenue generation, and measurable financial inclusion
-            outcomes. This efficiency is reinforced through KPI-driven grants of
-            up to $25,000, directly tied to user sign-ups and transaction
-            volumes—ensuring capital is deployed against real traction. <br />
-            <br /> Founders launch at zero upfront cost, leveraging proven
-            infrastructure backed by Fuspay’s $20 million commitment to Africa’s
-            financial ecosystem. This model significantly reduces execution
-            risk, accelerates time-to-market, and creates a scalable pipeline of
-            fintech startups positioned for sustainable growth.
+            Bankiffy removes the traditional barriers to building fintech in
+            Africa by providing founders with ready-to-use, enterprise-grade
+            financial infrastructure. <br />
+            <br /> Instead of spending years building core systems, founders
+            launch functional digital financial products in minutes and focus
+            immediately on customer acquisition, revenue growth, and real
+            financial inclusion impact. <br />
+            <br /> Capital support is performance-based. Founders access
+            KPI-driven grants of up to $25,000, tied directly to verified user
+            adoption and transaction activity—ensuring funding follows traction,
+            not promises. <br />
+            <br /> With zero upfront infrastructure costs and technology backed
+            by <b>Fuspay’s</b> $10 million commitment to Africa’s financial
+            ecosystem, Bankiffy reduces execution risk, accelerates
+            time-to-market, and enables founders to build scalable, sustainable
+            fintech businesses.
           </p>
         </motion.div>
       </motion.div>

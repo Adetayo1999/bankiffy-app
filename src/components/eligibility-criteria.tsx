@@ -187,7 +187,7 @@ export const EligibilityCriteria = () => {
           <p className="text-sm md:text-base lg:text-xl text-[#3F3F3F] mb-4 md:mb-6">
             Every participating startup should have at least three full-time
             team members actively working on the project and willing to commit
-            for the program&apos;s full duration.
+            to the program&apos;s full duration.
           </p>
           <motion.button
             style={{

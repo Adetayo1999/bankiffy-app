@@ -137,10 +137,9 @@ export const WhyJoinBankiffy = () => {
               challenges.
             </p>
             <p className="text-sm md:text-base lg:text-[1.375rem]">
-              Through this initiative, each selected startup receives year-round
-              customer and technical support, full license coverage, regulatory
-              and compliance assistance, and ongoing, team-specific training
-              programs.
+              Through this initiative, each selected startup receives technical
+              support, full license coverage, regulatory and compliance
+              assistance, and ongoing, team-specific training programs.
             </p>
             <p className="text-sm md:text-base lg:text-[1.375rem]">
               In addition, founders benefit from structured investment-readiness

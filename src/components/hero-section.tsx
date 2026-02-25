@@ -105,6 +105,9 @@ export const HeroSection = () => {
               }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              onClick={() => {
+                window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");
+              }}
             >
               <span className="text-base md:text-lg lg:text-[1.4rem] font-medium">
                 APPLY NOW
@@ -147,7 +150,7 @@ export const HeroSection = () => {
             className="text-sm md:text-base lg:text-lg xl:text-[1.375rem] font-bold"
             variants={itemVariants}
           >
-            Opens → Feb 15th- March 10th, 2026
+            Opens → Feb 20th - March 31st, 2026
           </motion.p>
         </motion.div>
 
@@ -175,7 +178,7 @@ export const HeroSection = () => {
         transition={{ duration: 0.6, delay: 0.8 }}
       >
         <p className="mb-4 md:mb-8 text-[#979797] text-sm md:text-base lg:text-[1.375rem]">
-          POWERED BY
+          PARTNERS
         </p>
 
         <motion.div

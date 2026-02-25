@@ -64,6 +64,12 @@ export const PartnerWithUs = () => {
               boxShadow: "0 10px 40px rgba(1, 71, 255, 0.3)",
             }}
             whileTap={{ scale: 0.98 }}
+            onClick={() => {
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSfuxOV8iwqG8cO2LbKZG0zO6dGofOP3LdhCBhTmi3pbNg4LYw/viewform?usp=preview",
+                "_blank",
+              );
+            }}
           >
             <span className="text-base md:text-[1.2rem] font-bold">
               Become a partner

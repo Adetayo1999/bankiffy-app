@@ -45,6 +45,9 @@ export const ApplyBanner = () => {
               boxShadow: "0 10px 40px rgba(1, 71, 255, 0.3)",
             }}
             whileTap={{ scale: 0.98 }}
+            onClick={() => {
+              window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");
+            }}
           >
             <span className="text-base md:text-[1.2rem] font-medium">
               APPLY NOW

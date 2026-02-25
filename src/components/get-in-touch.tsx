@@ -161,14 +161,13 @@ export const GetInTouch = () => {
               className="text-2xl md:text-3xl lg:text-[3.125rem] font-bold leading-[100%] mb-4 md:mb-7"
               variants={itemVariants}
             >
-              We&apos;re Here To <br /> Connect
+              We are here to help you get started
             </motion.h2>
             <motion.p
               className="text-sm md:text-base lg:text-xl mb-10 md:mb-24"
               variants={itemVariants}
             >
-              Have questions about the summit? Need help with registration or
-              travel? Our team is ready to assist you.
+              Have questions about the program? Our team is ready to assist you.
             </motion.p>
           </div>
 
