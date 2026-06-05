@@ -72,7 +72,7 @@ export const EventProgramComponent = () => {
         <WhyAttendCard
           idx={1}
           description="Application opens. Submit your application for review. Early submission is advised."
-          title="Jan 15-30th"
+          title="June 10 - July 10th"
         />
         <WhyAttendCard
           idx={2}
@@ -112,7 +112,7 @@ const WhyAttendCard: React.FC<{
       <motion.h1
         className={clsx(
           "text-lg md:text-xl font-bold uppercase mb-5 md:mb-10",
-          props.idx % 2 === 0 && "md:text-end"
+          props.idx % 2 === 0 && "md:text-end",
         )}
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -133,7 +133,7 @@ const WhyAttendCard: React.FC<{
       <motion.div
         className={clsx(
           "absolute right-0 -bottom-16",
-          props.idx % 2 === 0 ? "right-0" : "left-0"
+          props.idx % 2 === 0 ? "right-0" : "left-0",
         )}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}

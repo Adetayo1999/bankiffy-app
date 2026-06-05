@@ -87,7 +87,7 @@ export const WhyAttendComponent = () => {
         <WhyAttendCard
           idx={1}
           description="Application opens. Submit your application for review. Early submission is advised."
-          title="Jan 15-30th"
+          title="June 10th - July 10th"
         />
         <WhyAttendCard
           idx={2}
@@ -127,7 +127,7 @@ const WhyAttendCard: React.FC<{
       <motion.h1
         className={clsx(
           "text-base md:text-lg lg:text-xl font-bold uppercase mb-6 md:mb-10",
-          props.idx % 2 === 0 && "text-end"
+          props.idx % 2 === 0 && "text-end",
         )}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -138,7 +138,7 @@ const WhyAttendCard: React.FC<{
       <div className={clsx("flex", props.idx % 2 !== 0 && "justify-end")}>
         <p
           className={clsx(
-            "w-full sm:w-48 md:w-52 lg:w-60 text-sm md:text-base lg:text-xl"
+            "w-full sm:w-48 md:w-52 lg:w-60 text-sm md:text-base lg:text-xl",
           )}
         >
           {props.description}
@@ -147,7 +147,7 @@ const WhyAttendCard: React.FC<{
       <motion.div
         className={clsx(
           "absolute -bottom-8 md:-bottom-16",
-          props.idx % 2 === 0 ? "right-0" : "left-0"
+          props.idx % 2 === 0 ? "right-0" : "left-0",
         )}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
