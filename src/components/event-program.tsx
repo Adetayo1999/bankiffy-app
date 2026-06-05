@@ -105,7 +105,7 @@ const WhyAttendCard: React.FC<{
       variants={cardVariants}
       whileHover={{
         scale: 1.02,
-        boxShadow: "0 20px 50px rgba(1, 71, 255, 0.2)",
+        boxShadow: "var(--brand-hover-shadow)",
         transition: { duration: 0.3 },
       }}
     >
@@ -144,7 +144,7 @@ const WhyAttendCard: React.FC<{
         }}
       >
         <motion.p
-          className="bg-[linear-gradient(184.55deg,#0147FF_35.34%,rgba(1,71,255,0)_79.91%)] text-transparent bg-clip-text leading-[100%] text-[10rem] md:text-[18.75rem]"
+          className="bg-brand-gradient-text text-transparent bg-clip-text leading-[100%] text-[10rem] md:text-[18.75rem]"
           animate={{
             y: [0, -5, 0],
           }}

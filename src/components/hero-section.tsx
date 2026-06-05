@@ -8,6 +8,7 @@ import nitaImg from "@/images/nita-logo.svg";
 import itexImg from "@/images/itex.svg";
 import nuMoniImg from "@/images/numoni.svg";
 import fuspayImg from "@/images/fuspay.svg";
+import { brandMotion } from "@/lib/brand";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -64,7 +65,7 @@ export const HeroSection = () => {
               Welcome to
             </p>
             <motion.button
-              className="bg-[linear-gradient(84.77deg,#0147FF_1.59%,rgba(1,71,255,0)_121.45%)] font-medium rounded-full px-6 md:px-12 py-2.5 md:py-3.5 text-sm md:text-base"
+              className="btn-primary font-medium rounded-full px-6 md:px-12 py-2.5 md:py-3.5 text-sm md:text-base"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -94,16 +95,9 @@ export const HeroSection = () => {
             variants={itemVariants}
           >
             <motion.button
-              style={{
-                backgroundImage:
-                  "linear-gradient(84.77deg, #0147FF 1.59%, rgba(1, 71, 255, 0) 121.45%)",
-              }}
-              className="rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 py-3 md:py-4 px-8 md:px-12"
-              whileHover={{
-                scale: 1.03,
-                boxShadow: "0 10px 40px rgba(1, 71, 255, 0.3)",
-              }}
-              whileTap={{ scale: 0.98 }}
+              className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 py-3 md:py-4 px-8 md:px-12"
+              whileHover={brandMotion.buttonHover}
+              whileTap={brandMotion.buttonTap}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
               onClick={() => {
                 window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");

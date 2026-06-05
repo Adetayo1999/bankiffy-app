@@ -142,7 +142,7 @@ export const Newsletter = () => {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.3 }}
         >
-          Bankiffy FIP 2026 - cohort 1
+          Bankiffy BAP 2026 - cohort 1
         </motion.h1>
 
         <motion.div
@@ -155,7 +155,7 @@ export const Newsletter = () => {
             <motion.div key={idx} variants={linkVariants}>
               <Link
                 href={link.path}
-                className="last-of-type:col-span-2 text-[#1C1A1A] text-sm md:text-base lg:text-xl hover:text-[#0147FF] transition-colors duration-300"
+                className="last-of-type:col-span-2 text-[#1C1A1A] text-sm md:text-base lg:text-xl hover:text-brand transition-colors duration-300"
               >
                 <motion.span
                   whileHover={{ x: 5 }}
@@ -175,12 +175,12 @@ export const Newsletter = () => {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ delay: 0.8 }}
         >
-          © 2026 Bankiffy FIP. All rights reserved.
+          © 2026 Bankiffy BAP. All rights reserved.
         </motion.p>
       </motion.div>
 
       <motion.div
-        className="bg-[#0147FF] rounded-2xl md:rounded-[3.125rem] p-6 md:p-10 lg:p-17.5 text-white"
+        className="bg-brand rounded-2xl md:rounded-[3.125rem] p-6 md:p-10 lg:p-17.5 text-white"
         initial={{ opacity: 0, x: 30, scale: 0.98 }}
         animate={
           isInView
@@ -188,7 +188,7 @@ export const Newsletter = () => {
             : { opacity: 0, x: 30, scale: 0.98 }
         }
         transition={{ duration: 0.6, delay: 0.3 }}
-        whileHover={{ boxShadow: "0 25px 60px rgba(1, 71, 255, 0.35)" }}
+        whileHover={{ boxShadow: "var(--brand-card-hover-shadow)" }}
       >
         <div className="mb-10 md:mb-24">
           <motion.div

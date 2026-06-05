@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { brandMotion } from "@/lib/brand";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -135,8 +136,8 @@ export const Agenda = () => {
                 y2="147.123"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0147FF" />
-                <stop offset="1" stopColor="#0147FF" stopOpacity="0" />
+                <stop stopColor="var(--brand-primary)" />
+                <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -192,21 +193,14 @@ export const Agenda = () => {
 
                 {week.hasButton && (
                   <motion.button
-                    style={{
-                      backgroundImage:
-                        "linear-gradient(84.77deg, #0147FF 1.59%, rgba(1, 71, 255, 0) 121.45%)",
-                    }}
-                    className="rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-6 md:px-12"
+                    className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-6 md:px-12"
                     initial={{ opacity: 0, y: 20 }}
                     animate={
                       isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
                     }
                     transition={{ delay: 1.2, duration: 0.5 }}
-                    whileHover={{
-                      scale: 1.02,
-                      boxShadow: "0 10px 40px rgba(1, 71, 255, 0.3)",
-                    }}
-                    whileTap={{ scale: 0.98 }}
+                    whileHover={brandMotion.buttonHover}
+                    whileTap={brandMotion.buttonTap}
                   >
                     <span className="text-base md:text-lg lg:text-[1.4rem] font-medium">
                       View detailed schedule

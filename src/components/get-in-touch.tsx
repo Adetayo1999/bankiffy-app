@@ -271,7 +271,7 @@ export const GetInTouch = () => {
                   key={placeholder}
                   type="text"
                   placeholder={placeholder}
-                  className="border-b border-[#7E7E7E] text-base md:text-lg lg:text-xl pb-1.5 w-full text-[#7E7E7E] placeholder:text-[#7E7E7E] px-2 bg-transparent focus:border-[#0147FF] transition-colors duration-300 outline-none"
+                  className="border-b border-[#7E7E7E] text-base md:text-lg lg:text-xl pb-1.5 w-full text-[#7E7E7E] placeholder:text-[#7E7E7E] px-2 bg-transparent focus:border-brand transition-colors duration-300 outline-none"
                   variants={formItemVariants}
                   whileFocus={{ scale: 1.01 }}
                   custom={index}
@@ -279,7 +279,7 @@ export const GetInTouch = () => {
               ))}
 
               <motion.textarea
-                className="border-b border-[#7E7E7E] text-base md:text-lg lg:text-xl pb-1.5 w-full text-[#7E7E7E] placeholder:text-[#7E7E7E] px-2 bg-transparent focus:border-[#0147FF] transition-colors duration-300 outline-none resize-none"
+                className="border-b border-[#7E7E7E] text-base md:text-lg lg:text-xl pb-1.5 w-full text-[#7E7E7E] placeholder:text-[#7E7E7E] px-2 bg-transparent focus:border-brand transition-colors duration-300 outline-none resize-none"
                 rows={3}
                 placeholder="Message"
                 variants={formItemVariants}
@@ -288,13 +288,13 @@ export const GetInTouch = () => {
             </motion.div>
 
             <motion.button
-              className="bg-[linear-gradient(84.82deg,#0147FF_15.74%,rgba(1,71,255,0)_204.53%)] rounded-full font-medium text-base md:text-lg lg:text-xl text-white py-3 md:py-4 px-8 md:px-13"
+              className="btn-primary-form rounded-full font-medium text-base md:text-lg lg:text-xl text-white py-3 md:py-4 px-8 md:px-13"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ delay: 0.6 }}
               whileHover={{
                 scale: 1.03,
-                boxShadow: "0 10px 30px rgba(1, 71, 255, 0.3)",
+                boxShadow: "var(--brand-hover-shadow)",
               }}
               whileTap={{ scale: 0.98 }}
             >

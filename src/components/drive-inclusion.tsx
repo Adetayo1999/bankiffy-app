@@ -62,8 +62,8 @@ export const DriveINclusion = () => {
               y2="271.388"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#0147FF" />
-              <stop offset="1" stopColor="#0147FF" stopOpacity="0" />
+              <stop stopColor="var(--brand-primary)" />
+              <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
             </linearGradient>
           </defs>
         </motion.svg>

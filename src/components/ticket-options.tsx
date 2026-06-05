@@ -96,7 +96,7 @@ export const TicketOptions = () => {
           BENEFITS →
         </motion.h1>
         <motion.p
-          className="text-base md:text-xl lg:text-[2.25rem] uppercase text-[#8092C1] font-bold"
+          className="text-base md:text-xl lg:text-[2.25rem] uppercase text-brand-muted font-bold"
           initial={{ opacity: 0, x: 30 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -116,7 +116,7 @@ export const TicketOptions = () => {
           <motion.div
             key={index}
             className={`${
-              ticket.isPrimary ? "bg-[#0147FF]" : "border border-white"
+              ticket.isPrimary ? "bg-brand" : "border border-white"
             } rounded-2xl md:rounded-[3.125rem] min-h-80 md:min-h-96 lg:min-h-123.5 p-6 md:p-10 lg:p-15 text-white flex flex-col ${
               ticket.isPrimary ? "justify-between" : ""
             } group`}
@@ -125,7 +125,7 @@ export const TicketOptions = () => {
               y: -15,
               scale: 1.02,
               boxShadow: ticket.isPrimary
-                ? "0 30px 60px rgba(1, 71, 255, 0.4)"
+                ? "var(--brand-card-hover-shadow)"
                 : "0 30px 60px rgba(255, 255, 255, 0.1)",
               transition: { duration: 0.3 },
             }}

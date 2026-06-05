@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState, useEffect, useMemo, useCallback } from "react";
+import { brandMotion } from "@/lib/brand";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -54,8 +55,8 @@ export const RegisterNow = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // Target date: February 15th, 2026 at 11:59 PM WAT (UTC+1)
-  const targetDate = useMemo(() => new Date("2026-03-31T23:59:00+01:00"), []);
+  // Target date: July 10th, 2026 at 11:59 PM WAT (UTC+1)
+  const targetDate = useMemo(() => new Date("2026-07-10T23:59:00+01:00"), []);
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
@@ -121,16 +122,9 @@ export const RegisterNow = () => {
           </p>
 
           <motion.button
-            style={{
-              backgroundImage:
-                "linear-gradient(84.77deg, #0147FF 1.59%, rgba(1, 71, 255, 0) 121.45%)",
-            }}
-            className="rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-8 md:px-12 cursor-pointer"
-            whileHover={{
-              scale: 1.03,
-              boxShadow: "0 10px 40px rgba(1, 71, 255, 0.3)",
-            }}
-            whileTap={{ scale: 0.98 }}
+            className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-8 md:px-12 cursor-pointer"
+            whileHover={brandMotion.buttonHover}
+            whileTap={brandMotion.buttonTap}
             onClick={() => {
               window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");
             }}
@@ -183,7 +177,7 @@ export const RegisterNow = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            APPLICATION OPENS FROM 20TH FEBRUARY UNTIL
+            APPLICATION OPENS FROM 10TH JUNE UNTIL
           </motion.p>
           <motion.p
             className="text-sm md:text-base lg:text-[1.5rem]"
@@ -191,7 +185,7 @@ export const RegisterNow = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            APPLICATION CLOSES ON THE 31ST MARCH 2025
+            APPLICATION CLOSES ON THE 10TH JULY 2026
           </motion.p>
 
           <motion.div
@@ -216,9 +210,9 @@ export const RegisterNow = () => {
                       timeLeft
                         ? {
                             textShadow: [
-                              "0 0 20px rgba(1, 71, 255, 0)",
-                              "0 0 40px rgba(1, 71, 255, 0.5)",
-                              "0 0 20px rgba(1, 71, 255, 0)",
+                              "0 0 20px rgba(var(--brand-primary-rgb), 0)",
+                              "0 0 40px rgba(var(--brand-primary-rgb), 0.5)",
+                              "0 0 20px rgba(var(--brand-primary-rgb), 0)",
                             ],
                           }
                         : {}
@@ -296,8 +290,8 @@ export const RegisterNow = () => {
                 y2="271.388"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0147FF" />
-                <stop offset="1" stopColor="#0147FF" stopOpacity="0" />
+                <stop stopColor="var(--brand-primary)" />
+                <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
               </linearGradient>
             </defs>
           </motion.svg>

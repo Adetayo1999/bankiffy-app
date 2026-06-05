@@ -53,7 +53,7 @@ export const AppHeader = () => {
                 <Link
                   href={item.path}
                   className={`relative py-2 px-4 xl:px-5 rounded-full transition-all duration-300 ${
-                    active ? "border border-white" : "hover:text-[#0147FF]"
+                    active ? "border border-white" : "hover:text-brand"
                   }`}
                 >
                   <motion.span
@@ -128,7 +128,7 @@ export const AppHeader = () => {
                       href={item.path}
                       onClick={() => setIsMenuOpen(false)}
                       className={`block py-3 px-4 rounded-xl text-white font-medium text-lg transition-all duration-300 ${
-                        active ? "bg-[#0147FF]" : "hover:bg-white/10"
+                        active ? "bg-brand" : "hover:bg-white/10"
                       }`}
                     >
                       {item.title}

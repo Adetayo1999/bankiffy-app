@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import { brandMotion } from "@/lib/brand";
 
 const headerVariants = {
   hidden: { opacity: 0, y: -20 },
@@ -77,7 +78,7 @@ export const EligibilityCriteria = () => {
       textColor: "text-[#1C1A1A]",
       descColor: "text-[#3F3F3F]",
       numberGradient:
-        "bg-[linear-gradient(181.83deg,#0147FF_-47.66%,rgba(1,71,255,0)_82.81%)]",
+        "bg-brand-gradient-fade",
       content: (
         <p className="text-sm md:text-base lg:text-xl">
           Eligible applicants operate a registered business and commit full-time
@@ -93,11 +94,11 @@ export const EligibilityCriteria = () => {
     {
       title: "passion & commitment",
       number: "02",
-      bg: "bg-[#0147FF]",
+      bg: "bg-brand",
       textColor: "text-white",
       descColor: "text-white",
       numberGradient:
-        "bg-[linear-gradient(181.83deg,#FFFFFF_-47.66%,rgba(226,234,255,0)_82.81%)]",
+        "bg-brand-gradient-number",
       content: (
         <p className="text-sm md:text-base lg:text-xl text-white">
           Applicants must have a minimum educational qualification of a BSc
@@ -114,7 +115,7 @@ export const EligibilityCriteria = () => {
       textColor: "text-white",
       descColor: "text-white",
       numberGradient:
-        "bg-[linear-gradient(181.83deg,#FFFFFF_-47.66%,rgba(226,234,255,0)_82.81%)]",
+        "bg-brand-gradient-number",
       content: (
         <>
           <p className="text-sm md:text-base lg:text-xl text-white mb-4 md:mb-6">
@@ -134,7 +135,7 @@ export const EligibilityCriteria = () => {
             ].map((item, idx) => (
               <motion.button
                 key={idx}
-                className="bg-[linear-gradient(84.77deg,#0147FF_1.59%,rgba(1,71,255,0)_121.45%)] rounded-full text-white font-medium text-xs md:text-sm lg:text-base py-2 md:py-2.5 px-2"
+                className="btn-primary rounded-full text-white font-medium text-xs md:text-sm lg:text-base py-2 md:py-2.5 px-2"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={
                   isInView
@@ -155,11 +156,11 @@ export const EligibilityCriteria = () => {
     {
       title: "area of focus",
       number: "04",
-      bg: "bg-[#0147FF]",
+      bg: "bg-brand",
       textColor: "text-white",
       descColor: "text-white",
       numberGradient:
-        "bg-[linear-gradient(181.83deg,#FFFFFF_-47.66%,rgba(226,234,255,0)_82.81%)]",
+        "bg-brand-gradient-number",
       content: (
         <p className="text-sm md:text-base lg:text-xl text-white">
           Each project submission should incorporate at least three of the
@@ -180,7 +181,7 @@ export const EligibilityCriteria = () => {
       textColor: "text-[#1C1A1A]",
       descColor: "text-[#3F3F3F]",
       numberGradient:
-        "bg-[linear-gradient(181.83deg,#0147FF_-47.66%,rgba(1,71,255,0)_82.81%)]",
+        "bg-brand-gradient-fade",
       hasButton: true,
       content: (
         <>
@@ -190,16 +191,9 @@ export const EligibilityCriteria = () => {
             to the program&apos;s full duration.
           </p>
           <motion.button
-            style={{
-              backgroundImage:
-                "linear-gradient(84.77deg, #0147FF 1.59%, rgba(1, 71, 255, 0) 121.45%)",
-            }}
-            className="rounded-full flex justify-center items-center gap-x-2 md:gap-x-4 w-full py-3 md:py-4 px-4 md:px-8"
-            whileHover={{
-              scale: 1.02,
-              boxShadow: "0 10px 30px rgba(1, 71, 255, 0.3)",
-            }}
-            whileTap={{ scale: 0.98 }}
+            className="btn-primary rounded-full flex justify-center items-center gap-x-2 md:gap-x-4 w-full py-3 md:py-4 px-4 md:px-8"
+            whileHover={brandMotion.buttonHover}
+            whileTap={brandMotion.buttonTap}
           >
             <span className="text-sm md:text-base lg:text-xl text-white font-medium">
               Download Eligibility Criteria
@@ -329,8 +323,8 @@ export const EligibilityCriteria = () => {
             animate={isInView ? "visible" : "hidden"}
             whileHover={{
               y: -10,
-              boxShadow: card.bg.includes("0147FF")
-                ? "0 25px 60px rgba(1, 71, 255, 0.35)"
+              boxShadow: card.bg.includes("bg-brand")
+                ? "var(--brand-card-hover-shadow)"
                 : "0 25px 60px rgba(0, 0, 0, 0.15)",
               transition: { duration: 0.3 },
             }}

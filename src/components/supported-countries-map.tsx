@@ -91,8 +91,8 @@ const SupportedCountriesMap = () => {
             top: mousePos.y - 10,
             padding: "6px 12px",
             background: hovered.supported
-              ? "linear-gradient(135deg, #3b5998 0%, #2b4478 100%)"
-              : "rgba(20, 30, 50, 0.9)",
+              ? "var(--brand-map-tooltip)"
+              : "rgba(20, 16, 35, 0.9)",
             borderRadius: 6,
             fontSize: 13,
             fontWeight: 500,
@@ -102,7 +102,7 @@ const SupportedCountriesMap = () => {
             whiteSpace: "nowrap",
             boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
             border: hovered.supported
-              ? "1px solid rgba(100, 140, 200, 0.4)"
+              ? "1px solid rgba(var(--brand-primary-rgb), 0.4)"
               : "1px solid rgba(255, 255, 255, 0.1)",
             animation: "tooltipFadeIn 0.15s ease-out",
           }}
@@ -145,9 +145,9 @@ const SupportedCountriesMap = () => {
             y2="0"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0%" stopColor="#1A2437" />
-            <stop offset="60%" stopColor="#111B2B" />
-            <stop offset="100%" stopColor="#0E1624" />
+            <stop offset="0%" stopColor="var(--brand-map-land-start)" />
+            <stop offset="60%" stopColor="var(--brand-map-land-mid)" />
+            <stop offset="100%" stopColor="var(--brand-map-land-end)" />
           </linearGradient>
 
           {/* supported highlight */}
@@ -159,8 +159,8 @@ const SupportedCountriesMap = () => {
             y2="0"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0%" stopColor="#2B3B5F" />
-            <stop offset="100%" stopColor="#1E2C4A" />
+            <stop offset="0%" stopColor="var(--brand-map-supported-start)" />
+            <stop offset="100%" stopColor="var(--brand-map-supported-end)" />
           </linearGradient>
         </defs>
 
@@ -188,12 +188,12 @@ const SupportedCountriesMap = () => {
                       stroke: "transparent",
                     },
                     hover: {
-                      fill: supportedCountry ? "#38507F" : "url(#landGradient)",
+                      fill: supportedCountry ? "var(--brand-map-hover)" : "url(#landGradient)",
                       outline: "none",
                       cursor: supportedCountry ? "pointer" : "default",
                     },
                     pressed: {
-                      fill: supportedCountry ? "#2E4470" : "url(#landGradient)",
+                      fill: supportedCountry ? "var(--brand-map-pressed)" : "url(#landGradient)",
                       outline: "none",
                     },
                   }}

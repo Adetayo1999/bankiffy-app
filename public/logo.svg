@@ -4,11 +4,11 @@
 <path d="M31.5 29.8346C32.3284 29.8346 33 30.5061 33 31.3346V31.9605C33.3196 31.8783 33.6547 31.8346 34 31.8346C36.2091 31.8346 38 33.6254 38 35.8346C38 38.0437 36.2091 39.8346 34 39.8346C31.7909 39.8346 30 38.0437 30 35.8346C30 35.7294 30.0047 35.6252 30.0127 35.5221C30.005 35.4606 30 35.3981 30 35.3346V31.3346C30 30.5061 30.6716 29.8346 31.5 29.8346Z" fill="url(#paint1_linear_133_372)"/>
 <defs>
 <linearGradient id="paint0_linear_133_372" x1="7.03336" y1="27.698" x2="75.249" y2="40.3111" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0147FF"/>
-<stop offset="1" stop-color="#0147FF" stop-opacity="0"/>
+<stop stop-color="#7c3aed"/>
+<stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="paint1_linear_133_372" x1="36.5" y1="33.8346" x2="25" y2="34.3346" gradientUnits="userSpaceOnUse">
-<stop stop-color="#0147FF"/>
+<stop stop-color="#7c3aed"/>
 <stop offset="1" stop-color="#012B99" stop-opacity="0.1"/>
 </linearGradient>
 </defs>

@@ -2,10 +2,85 @@
 
 :root {
   --background: #000000;
+  --brand-primary: #7c3aed;
+  --brand-primary-rgb: 124, 58, 237;
+  --brand-gradient: linear-gradient(
+    84.77deg,
+    var(--brand-primary) 1.59%,
+    rgba(var(--brand-primary-rgb), 0) 121.45%
+  );
+  --brand-gradient-form: linear-gradient(
+    84.82deg,
+    var(--brand-primary) 15.74%,
+    rgba(var(--brand-primary-rgb), 0) 204.53%
+  );
+  --brand-gradient-card: linear-gradient(
+    84.77deg,
+    var(--brand-primary) 49.99%,
+    rgba(var(--brand-primary-rgb), 0) 121.45%
+  );
+  --brand-gradient-fade: linear-gradient(
+    181.83deg,
+    var(--brand-primary) -47.66%,
+    rgba(var(--brand-primary-rgb), 0) 82.81%
+  );
+  --brand-gradient-text: linear-gradient(
+    184.55deg,
+    var(--brand-primary) 35.34%,
+    rgba(var(--brand-primary-rgb), 0) 79.91%
+  );
+  --brand-hover-shadow: 0 10px 40px rgba(var(--brand-primary-rgb), 0.3);
+  --brand-card-hover-shadow: 0 25px 60px rgba(var(--brand-primary-rgb), 0.35);
+  --brand-dark: #2e1f4f;
+  --brand-muted: #a78bfa;
+  --brand-light-rgb: 237, 233, 254;
+  --brand-gradient-number: linear-gradient(
+    181.83deg,
+    #ffffff -47.66%,
+    rgba(var(--brand-light-rgb), 0) 82.81%
+  );
+  --brand-map-tooltip: linear-gradient(135deg, var(--brand-primary) 0%, #5b21b6 100%);
+  --brand-map-supported-start: #5b21b6;
+  --brand-map-supported-end: #3b1578;
+  --brand-map-hover: #6d28d9;
+  --brand-map-pressed: #5b21b6;
+  --brand-map-land-start: #1f1835;
+  --brand-map-land-mid: #151024;
+  --brand-map-land-end: #100d1e;
+}
+
+@theme inline {
+  --color-brand: var(--brand-primary);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-muted: var(--brand-muted);
 }
 
 body {
   background: var(--background);
+}
+
+.btn-primary {
+  background-image: var(--brand-gradient);
+}
+
+.btn-primary-form {
+  background-image: var(--brand-gradient-form);
+}
+
+.btn-primary-card {
+  background-image: var(--brand-gradient-card);
+}
+
+.bg-brand-gradient-fade {
+  background-image: var(--brand-gradient-fade);
+}
+
+.bg-brand-gradient-text {
+  background-image: var(--brand-gradient-text);
+}
+
+.bg-brand-gradient-number {
+  background-image: var(--brand-gradient-number);
 }
 
 .scrollbar-hide {

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { brandMotion } from "@/lib/brand";
 
 export const MeetThePeople = () => {
   return (
@@ -61,16 +62,9 @@ export const MeetThePeople = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
       >
         <motion.button
-          style={{
-            backgroundImage:
-              "linear-gradient(84.77deg, #0147FF 1.59%, rgba(1, 71, 255, 0) 121.45%)",
-          }}
-          className="rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 py-3 md:py-4 px-8 md:px-16"
-          whileHover={{
-            scale: 1.03,
-            boxShadow: "0 10px 40px rgba(1, 71, 255, 0.3)",
-          }}
-          whileTap={{ scale: 0.98 }}
+          className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 py-3 md:py-4 px-8 md:px-16"
+          whileHover={brandMotion.buttonHover}
+          whileTap={brandMotion.buttonTap}
           onClick={() => {
             window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");
           }}
@@ -134,8 +128,8 @@ export const MeetThePeople = () => {
               y2="147.123"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stopColor="#0147FF" />
-              <stop offset="1" stopColor="#0147FF" stopOpacity="0" />
+              <stop stopColor="var(--brand-primary)" />
+              <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
             </linearGradient>
           </defs>
         </motion.svg>

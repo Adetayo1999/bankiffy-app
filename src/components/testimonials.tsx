@@ -185,12 +185,12 @@ const TestimonialCard: React.FC<TestimonialType & { index: number }> = (
 ) => {
   return (
     <motion.div
-      className="bg-[#0147FF] h-72 md:h-80 lg:h-[27.688rem] w-72 sm:w-80 md:w-96 lg:w-125 shrink-0 rounded-2xl md:rounded-[3.125rem] px-6 md:px-10 lg:px-15 py-8 md:py-12 lg:py-17.5 flex flex-col justify-between text-white"
+      className="bg-brand h-72 md:h-80 lg:h-[27.688rem] w-72 sm:w-80 md:w-96 lg:w-125 shrink-0 rounded-2xl md:rounded-[3.125rem] px-6 md:px-10 lg:px-15 py-8 md:py-12 lg:py-17.5 flex flex-col justify-between text-white"
       variants={cardVariants}
       whileHover={{
         y: -10,
         scale: 1.02,
-        boxShadow: "0 25px 60px rgba(1, 71, 255, 0.4)",
+        boxShadow: "var(--brand-card-hover-shadow)",
         transition: { duration: 0.3 },
       }}
     >

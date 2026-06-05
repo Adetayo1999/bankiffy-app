@@ -52,7 +52,7 @@ export const ProblemStatement = () => {
             PROBLEM WE ARE SOLVING
           </motion.h3>
           <motion.div
-            className="text-white text-base md:text-lg lg:text-[1.813rem] flex-1 bg-[#20293F] rounded-2xl md:rounded-[3.125rem] py-8 md:py-12 px-6 md:px-8"
+            className="text-white text-base md:text-lg lg:text-[1.813rem] flex-1 bg-brand-dark rounded-2xl md:rounded-[3.125rem] py-8 md:py-12 px-6 md:px-8"
             whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
           >
             Bankiffy solves the problem of limited access to financial services
@@ -75,10 +75,10 @@ export const ProblemStatement = () => {
             OUR SOLUTION
           </motion.h3>
           <motion.div
-            className="py-8 md:py-12 px-6 md:px-8 text-white text-2xl md:text-3xl lg:text-[3.5rem] font-bold list-disc flex flex-col gap-y-4 md:gap-y-8 bg-[#0147FF] rounded-2xl md:rounded-[3.125rem]"
+            className="py-8 md:py-12 px-6 md:px-8 text-white text-2xl md:text-3xl lg:text-[3.5rem] font-bold list-disc flex flex-col gap-y-4 md:gap-y-8 bg-brand rounded-2xl md:rounded-[3.125rem]"
             whileHover={{
               scale: 1.02,
-              boxShadow: "0 20px 60px rgba(1, 71, 255, 0.4)",
+              boxShadow: "var(--brand-card-hover-shadow)",
               transition: { duration: 0.3 },
             }}
           >

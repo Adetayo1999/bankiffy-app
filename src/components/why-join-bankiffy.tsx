@@ -61,10 +61,10 @@ export const WhyJoinBankiffy = () => {
         </motion.h4>
 
         <motion.div
-          className="bg-[#0147FF] rounded-2xl md:rounded-[3.125rem] px-6 md:px-12 py-8 md:py-14 flex-1"
+          className="bg-brand rounded-2xl md:rounded-[3.125rem] px-6 md:px-12 py-8 md:py-14 flex-1"
           whileHover={{
             scale: 1.02,
-            boxShadow: "0 25px 60px rgba(1, 71, 255, 0.35)",
+            boxShadow: "var(--brand-card-hover-shadow)",
           }}
           transition={{ duration: 0.3 }}
           initial="rest"
@@ -92,7 +92,7 @@ export const WhyJoinBankiffy = () => {
                   fillRule="evenodd"
                   clipRule="evenodd"
                   d="M6.62556 1.52081C6.62556 0.680891 7.32474 0 8.18722 0H21.4383C22.3008 0 23 0.680891 23 1.52081V14.4253C23 15.2652 22.3008 15.9461 21.4383 15.9461C20.5759 15.9461 19.8767 15.2652 19.8767 14.4253V5.19238L2.66592 21.953C2.05605 22.5469 1.06727 22.5469 0.4574 21.953C-0.152467 21.359 -0.152467 20.3961 0.4574 19.8022L17.6682 3.04162H8.18722C7.32474 3.04162 6.62556 2.36073 6.62556 1.52081Z"
-                  fill="#0147FF"
+                  fill="var(--brand-primary)"
                 />
               </motion.svg>
             </motion.div>
@@ -119,11 +119,11 @@ export const WhyJoinBankiffy = () => {
         variants={containerVariants}
       >
         <motion.div
-          className="bg-[#0147FF] text-white rounded-2xl md:rounded-[3.125rem] px-6 md:px-12 py-8 md:py-14"
+          className="bg-brand text-white rounded-2xl md:rounded-[3.125rem] px-6 md:px-12 py-8 md:py-14"
           variants={cardVariants}
           whileHover={{
             scale: 1.02,
-            boxShadow: "0 25px 60px rgba(1, 71, 255, 0.35)",
+            boxShadow: "var(--brand-card-hover-shadow)",
           }}
           transition={{ duration: 0.3 }}
         >

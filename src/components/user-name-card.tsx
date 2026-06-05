@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { brandMotion } from "@/lib/brand";
 
 export const UserNameCard: React.FC<{
   name: React.ReactNode;
@@ -104,8 +105,8 @@ export const UsernameCardDetailed: React.FC<{
                 y2="53.8306"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#0147FF" />
-                <stop offset="1" stopColor="#0147FF" stopOpacity="0" />
+                <stop stopColor="var(--brand-primary)" />
+                <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
               </linearGradient>
             </defs>
           </svg>
@@ -130,12 +131,9 @@ export const UsernameCardDetailed: React.FC<{
         </motion.p>
 
         <motion.button
-          className="bg-[linear-gradient(84.77deg,#0147FF_49.99%,rgba(1,71,255,0)_121.45%)] flex justify-center items-center text-white gap-x-3 md:gap-x-5 rounded-full px-6 md:px-8 py-2"
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 10px 30px rgba(1, 71, 255, 0.3)",
-          }}
-          whileTap={{ scale: 0.98 }}
+          className="btn-primary-card flex justify-center items-center text-white gap-x-3 md:gap-x-5 rounded-full px-6 md:px-8 py-2"
+          whileHover={brandMotion.buttonHover}
+          whileTap={brandMotion.buttonTap}
         >
           <span className="text-sm md:text-base">Visit</span>
           <motion.span
