@@ -294,6 +294,6 @@ const navigationLinks = [
   },
   {
     title: "FAQ",
-    path: "/contact",
+    path: "/faq",
   },
 ];
