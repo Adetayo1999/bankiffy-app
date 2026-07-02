@@ -42,7 +42,7 @@ export const EventProgramComponent = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.h1
-          className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[6.25rem] leading-[100%]"
+          className="font-bold text-4xl sm:text-5xl md:text-4xl lg:text-6xl xl:text-[6.25rem] leading-[100%]"
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -72,7 +72,7 @@ export const EventProgramComponent = () => {
         <WhyAttendCard
           idx={1}
           description="Application opens. Submit your application for review. Early submission is advised."
-          title="June 10 - July 10th"
+          title="June 30 to July 31"
         />
         <WhyAttendCard
           idx={2}
@@ -101,7 +101,7 @@ const WhyAttendCard: React.FC<{
 }> = (props) => {
   return (
     <motion.div
-      className="bg-[#1C1A1A] h-auto md:h-[18.063rem] text-white rounded-2xl md:rounded-[3.125rem] relative overflow-hidden p-8 md:p-12.5"
+      className="bg-[#1C1A1A] min-h-56 md:min-h-72 xl:min-h-[18.063rem] text-white rounded-2xl md:rounded-[3.125rem] relative overflow-hidden p-6 md:p-8 xl:p-12.5"
       variants={cardVariants}
       whileHover={{
         scale: 1.02,
@@ -111,7 +111,7 @@ const WhyAttendCard: React.FC<{
     >
       <motion.h1
         className={clsx(
-          "text-lg md:text-xl font-bold uppercase mb-5 md:mb-10",
+          "relative z-10 text-lg md:text-xl font-bold uppercase mb-5 md:mb-10",
           props.idx % 2 === 0 && "md:text-end",
         )}
         initial={{ opacity: 0, y: 10 }}
@@ -120,9 +120,14 @@ const WhyAttendCard: React.FC<{
       >
         {props.title}
       </motion.h1>
-      <div className={clsx("flex", props.idx % 2 !== 0 && "md:justify-end")}>
+      <div
+        className={clsx(
+          "relative z-10 flex",
+          props.idx % 2 !== 0 && "md:justify-end",
+        )}
+      >
         <motion.p
-          className={clsx("w-full md:w-60 text-base md:text-xl")}
+          className={clsx("w-full md:w-full lg:w-60 text-base md:text-xl")}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 + props.idx * 0.1, duration: 0.4 }}
@@ -132,7 +137,7 @@ const WhyAttendCard: React.FC<{
       </div>
       <motion.div
         className={clsx(
-          "absolute right-0 -bottom-16",
+          "absolute z-0 pointer-events-none -bottom-8 md:-bottom-10 xl:-bottom-16 opacity-45 xl:opacity-100",
           props.idx % 2 === 0 ? "right-0" : "left-0",
         )}
         initial={{ opacity: 0, scale: 0.8 }}
@@ -144,7 +149,7 @@ const WhyAttendCard: React.FC<{
         }}
       >
         <motion.p
-          className="bg-brand-gradient-text text-transparent bg-clip-text leading-[100%] text-[10rem] md:text-[18.75rem]"
+          className="bg-brand-gradient-text text-transparent bg-clip-text leading-[100%] text-8xl md:text-[8rem] lg:text-[10rem] xl:text-[18.75rem]"
           animate={{
             y: [0, -5, 0],
           }}

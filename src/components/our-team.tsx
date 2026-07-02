@@ -40,7 +40,7 @@ export const OurTeam = () => {
   return (
     <div ref={ref}>
       <motion.h1
-        className="text-white font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[6.25rem] leading-[100%] mb-10 md:mb-28"
+        className="text-white font-bold text-4xl sm:text-5xl md:text-4xl lg:text-6xl xl:text-[6.25rem] leading-[100%] mb-10 md:mb-28"
         initial={{ opacity: 0, y: 30 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
         transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}

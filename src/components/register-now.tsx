@@ -55,8 +55,8 @@ export const RegisterNow = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // Target date: July 10th, 2026 at 11:59 PM WAT (UTC+1)
-  const targetDate = useMemo(() => new Date("2026-07-10T23:59:00+01:00"), []);
+  // Target date: July 31st, 2026 at 11:59 PM WAT (UTC+1)
+  const targetDate = useMemo(() => new Date("2026-07-31T23:59:00+01:00"), []);
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
@@ -103,7 +103,7 @@ export const RegisterNow = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-[6.25rem] font-bold leading-[100%]"
+          className="text-4xl sm:text-5xl md:text-4xl lg:text-6xl xl:text-[6.25rem] font-bold leading-[100%]"
           initial={{ opacity: 0, x: -50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -121,13 +121,13 @@ export const RegisterNow = () => {
             REGISTER NOW and join the future of AI innovation.
           </p>
 
-          <motion.button
+          <motion.a
+            href="https://forms.gle/3zpXMqUugWdxQyST9"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-8 md:px-12 cursor-pointer"
             whileHover={brandMotion.buttonHover}
             whileTap={brandMotion.buttonTap}
-            onClick={() => {
-              window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");
-            }}
           >
             <span className="text-base md:text-lg lg:text-[1.4rem] font-medium">
               APPLY NOW
@@ -156,12 +156,12 @@ export const RegisterNow = () => {
                 />
               </svg>
             </motion.span>
-          </motion.button>
+          </motion.a>
         </motion.div>
       </motion.div>
 
       <motion.div
-        className="bg-[#1C1A1A] rounded-2xl md:rounded-[3.125rem] min-h-64 md:h-auto lg:h-110.5 relative p-6 md:p-12 lg:p-[5.938rem] overflow-hidden"
+        className="bg-[#1C1A1A] rounded-2xl md:rounded-[3.125rem] min-h-64 md:h-auto xl:h-110.5 relative p-6 md:p-12 xl:p-[5.938rem] overflow-hidden"
         initial={{ opacity: 0, y: 50, scale: 0.98 }}
         animate={
           isInView
@@ -177,7 +177,7 @@ export const RegisterNow = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            APPLICATION OPENS FROM 10TH JUNE UNTIL
+            APPLICATION OPENS FROM 30TH JUNE UNTIL
           </motion.p>
           <motion.p
             className="text-sm md:text-base lg:text-[1.5rem]"
@@ -185,11 +185,11 @@ export const RegisterNow = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            APPLICATION CLOSES ON THE 10TH JULY 2026
+            APPLICATION CLOSES ON THE 31ST JULY 2026
           </motion.p>
 
           <motion.div
-            className="flex flex-wrap relative  z-100"
+            className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-6 md:gap-y-10 xl:flex xl:flex-wrap relative z-100 mt-8 md:mt-12 xl:mt-0"
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
@@ -197,15 +197,15 @@ export const RegisterNow = () => {
             {countdownItems.map((item, index) => (
               <motion.span
                 key={item.label}
-                className="flex"
+                className="flex justify-center xl:justify-start"
                 variants={numberVariants}
               >
                 <motion.span
-                  className="flex flex-col justify-center items-center gap-y-2 md:gap-y-6"
+                  className="flex flex-col justify-center items-center gap-y-2 md:gap-y-4 xl:gap-y-6"
                   whileHover={{ scale: 1.05 }}
                 >
                   <motion.span
-                    className="font-bold leading-[100%] tracking-[0%] text-4xl sm:text-5xl md:text-7xl lg:text-[10rem] tabular-nums"
+                    className="font-bold leading-[100%] tracking-[0%] text-4xl sm:text-5xl md:text-5xl lg:text-7xl xl:text-[10rem] tabular-nums"
                     animate={
                       timeLeft
                         ? {
@@ -239,7 +239,7 @@ export const RegisterNow = () => {
                 </motion.span>
                 {index < countdownItems.length - 1 && (
                   <motion.span
-                    className="font-bold leading-[100%] tracking-[0%] text-4xl sm:text-5xl md:text-7xl lg:text-[10rem] mx-1 md:mx-3"
+                    className="hidden xl:inline font-bold leading-[100%] tracking-[0%] text-[10rem] mx-3"
                     animate={{ opacity: [1, 0.3, 1] }}
                     transition={{
                       repeat: Infinity,
@@ -256,7 +256,7 @@ export const RegisterNow = () => {
         </div>
 
         <motion.div
-          className="absolute bottom-0 right-0 hidden md:block"
+          className="absolute bottom-0 right-0 hidden xl:block"
           initial={{ opacity: 0, rotate: 45, scale: 0.5 }}
           animate={
             isInView

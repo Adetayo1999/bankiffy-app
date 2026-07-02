@@ -50,6 +50,11 @@
 }
 
 @theme inline {
+  --breakpoint-sm: 64.0625rem;
+  --breakpoint-md: 70rem;
+  --breakpoint-lg: 80rem;
+  --breakpoint-xl: 90rem;
+  --breakpoint-2xl: 100rem;
   --color-brand: var(--brand-primary);
   --color-brand-dark: var(--brand-dark);
   --color-brand-muted: var(--brand-muted);

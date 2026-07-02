@@ -12,7 +12,7 @@ export const DriveINclusion = () => {
     >
       <div className="relative z-100">
         <motion.h1
-          className="mb-4 md:mb-8 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-[5.875rem] leading-tight lg:leading-[100%]"
+          className="mb-4 md:mb-8 font-bold text-2xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-[5.875rem] leading-tight xl:leading-[100%]"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}

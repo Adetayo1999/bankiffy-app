@@ -12,7 +12,7 @@ export const ScheduleBanner = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
-        <motion.div
+        {/* <motion.div
           className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-x-8 mb-10 md:mb-20"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,11 +34,11 @@ export const ScheduleBanner = () => {
           >
             Horizon Convention Center, TechCity, Utopolis
           </motion.p>
-        </motion.div>
+        </motion.div> */}
 
         <div className="relative z-100">
           <motion.h1
-            className="mb-4 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[5.875rem]"
+            className="mb-4 font-bold text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[5.875rem]"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -62,13 +62,13 @@ export const ScheduleBanner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <motion.button
-            className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 py-3 md:py-4 px-8 md:px-16"
+          <motion.a
+            href="https://forms.gle/3zpXMqUugWdxQyST9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 py-3 md:py-4 px-8 md:px-16 w-fit"
             whileHover={brandMotion.buttonHover}
             whileTap={brandMotion.buttonTap}
-            onClick={() => {
-              window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");
-            }}
           >
             <span className="text-base md:text-[1.2rem] font-medium">
               APPLY NOW
@@ -97,7 +97,7 @@ export const ScheduleBanner = () => {
                 />
               </svg>
             </motion.span>
-          </motion.button>
+          </motion.a>
         </motion.div>
 
         <motion.div
@@ -130,7 +130,11 @@ export const ScheduleBanner = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stopColor="var(--brand-primary)" />
-                <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
+                <stop
+                  offset="1"
+                  stopColor="var(--brand-primary)"
+                  stopOpacity="0"
+                />
               </linearGradient>
             </defs>
           </motion.svg>

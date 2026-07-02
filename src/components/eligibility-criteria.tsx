@@ -237,7 +237,7 @@ export const EligibilityCriteria = () => {
         animate={isInView ? "visible" : "hidden"}
       >
         <motion.h2
-          className="text-2xl md:text-3xl lg:text-[3.125rem] text-white font-bold"
+          className="text-2xl md:text-2xl lg:text-3xl xl:text-[3.125rem] text-white font-bold"
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.6 }}
@@ -316,7 +316,7 @@ export const EligibilityCriteria = () => {
         {cards.map((card, index) => (
           <motion.div
             key={index}
-            className={`${card.bg} rounded-2xl md:rounded-[3.125rem] shrink-0 w-72 sm:w-80 md:w-96 lg:w-125 min-h-[20rem] md:min-h-[24rem] lg:min-h-[27.688rem] px-6 md:px-10 lg:px-14 py-6 md:py-8 lg:py-10`}
+            className={`${card.bg} rounded-2xl md:rounded-[3.125rem] shrink-0 w-72 sm:w-80 md:w-96 xl:w-125 min-h-[20rem] md:min-h-[24rem] xl:min-h-[27.688rem] px-6 md:px-10 xl:px-14 py-6 md:py-8 xl:py-10`}
             custom={index}
             variants={cardVariants}
             initial="hidden"
@@ -336,7 +336,7 @@ export const EligibilityCriteria = () => {
                 {card.title}
               </h2>
               <motion.h1
-                className={`shrink-0 ${card.numberGradient} bg-clip-text text-transparent text-5xl md:text-6xl lg:text-[7.869rem] leading-[100%]`}
+                className={`shrink-0 ${card.numberGradient} bg-clip-text text-transparent text-5xl md:text-5xl lg:text-6xl xl:text-[7.869rem] leading-[100%]`}
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={
                   isInView

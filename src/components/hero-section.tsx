@@ -50,9 +50,9 @@ export const HeroSection = () => {
 
   return (
     <div className="">
-      <div className="bg-[#1A1A1A] flex flex-col lg:flex-row justify-between gap-6 lg:gap-x-20 rounded-2xl md:rounded-[3.125rem] py-8 md:py-12.5 px-5 md:px-11 mb-6 md:mb-10 overflow-hidden">
+      <div className="bg-[#1A1A1A] flex flex-col xl:flex-row justify-between gap-6 xl:gap-x-20 rounded-2xl md:rounded-[3.125rem] py-8 md:py-12.5 px-5 md:px-11 mb-6 md:mb-10 overflow-hidden">
         <motion.div
-          className="flex-1 lg:flex-[0.6] text-white"
+          className="flex-1 xl:flex-[0.6] text-white"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -74,7 +74,7 @@ export const HeroSection = () => {
           </motion.div>
 
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[5.063rem] leading-tight lg:leading-22.5 font-bold mb-4 md:mb-[2.063rem]"
+            className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[5.063rem] leading-tight xl:leading-22.5 font-bold mb-4 md:mb-[2.063rem]"
             variants={itemVariants}
           >
             Fintech <br className="hidden md:inline" /> Accelerator{" "}
@@ -94,14 +94,14 @@ export const HeroSection = () => {
             className="flex flex-col sm:flex-row gap-4 sm:gap-x-6 lg:gap-x-10 mb-6 md:mb-13.5"
             variants={itemVariants}
           >
-            <motion.button
+            <motion.a
+              href="https://forms.gle/3zpXMqUugWdxQyST9"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 py-3 md:py-4 px-8 md:px-12"
               whileHover={brandMotion.buttonHover}
               whileTap={brandMotion.buttonTap}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              onClick={() => {
-                window.open("https://forms.gle/3zpXMqUugWdxQyST9", "_blank");
-              }}
             >
               <span className="text-base md:text-lg lg:text-[1.4rem] font-medium">
                 APPLY NOW
@@ -130,7 +130,7 @@ export const HeroSection = () => {
                   />
                 </svg>
               </motion.span>
-            </motion.button>
+            </motion.a>
 
             <motion.button
               className="text-base md:text-lg lg:text-[1.4rem] font-bold"
@@ -144,12 +144,12 @@ export const HeroSection = () => {
             className="text-sm md:text-base lg:text-lg xl:text-[1.375rem] font-bold"
             variants={itemVariants}
           >
-            Opens → June 10th - July 10th, 2026
+            Opens → June 30 to July 31, 2026
           </motion.p>
         </motion.div>
 
         <motion.div
-          className="w-full lg:flex-[0.4] rounded-xl md:rounded-[1.375rem] h-64 sm:h-80 md:h-96 lg:h-175 overflow-hidden"
+          className="w-full xl:flex-[0.4] rounded-xl md:rounded-[1.375rem] h-64 sm:h-80 md:h-[32rem] xl:h-175 overflow-hidden"
           initial={{ opacity: 0, scale: 0.95, x: 50 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
           transition={{

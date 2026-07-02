@@ -1,9 +1,5 @@
 "use client";
 
-import avatar1 from "@/images/avatar1.png";
-import avatar2 from "@/images/avatar2.png";
-import avatar3 from "@/images/avatar3.jpg";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -31,8 +27,6 @@ const cardVariants = {
 };
 
 export const ContactBanner = () => {
-  const avatars = [avatar1, avatar2, avatar3, avatar1];
-
   return (
     <motion.div
       className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-x-5"
@@ -92,32 +86,15 @@ export const ContactBanner = () => {
           </div>
         </div>
         <motion.div
-          className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6"
+          className="flex justify-start"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <div className="flex">
-            {avatars.map((item, idx) => (
-              <motion.div
-                key={idx}
-                className={`w-12 h-12 md:w-18.5 md:h-18.5 rounded-full border bg-green-200 overflow-hidden ${
-                  idx !== 0 && "-ml-4 md:-ml-8"
-                }`}
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.6 + idx * 0.1, duration: 0.3 }}
-                whileHover={{ scale: 1.1, zIndex: 10 }}
-              >
-                <Image
-                  src={item}
-                  alt="Test IMG"
-                  className="w-full h-full object-cover"
-                />
-              </motion.div>
-            ))}
-          </div>
-          <motion.button
+          <motion.a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdKSKzxPAbIXdQvMIy3ffbb9JS3TuumL3pFTMtIJsfFqcCt6w/formResponse"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white border flex items-center gap-x-3 md:gap-x-4 rounded-full py-3 md:py-4 px-8 md:px-12 border-white"
             whileHover={{
               scale: 1.05,
@@ -125,7 +102,9 @@ export const ContactBanner = () => {
             }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="text-base md:text-xl font-bold">And more</span>
+            <span className="text-base md:text-xl font-bold">
+              Partner with us
+            </span>
             <motion.span
               animate={{ x: [0, 4, 0] }}
               transition={{
@@ -150,7 +129,7 @@ export const ContactBanner = () => {
                 />
               </svg>
             </motion.span>
-          </motion.button>
+          </motion.a>
         </motion.div>
       </motion.div>
 

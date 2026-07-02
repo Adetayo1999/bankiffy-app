@@ -36,7 +36,7 @@ export const AppHeader = () => {
         </motion.div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center text-white font-medium text-base xl:text-[1.2rem] gap-x-6 xl:gap-x-10">
+        <nav className="hidden xl:flex items-center text-white font-medium text-base xl:text-[1.2rem] gap-x-6 xl:gap-x-10">
           {navLinks.map((item, index) => {
             const active = isActive(item.path);
             return (
@@ -72,7 +72,7 @@ export const AppHeader = () => {
 
         {/* Mobile Menu Button */}
         <motion.button
-          className="lg:hidden text-white p-2"
+          className="xl:hidden text-white p-2"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           whileTap={{ scale: 0.95 }}
         >
@@ -108,7 +108,7 @@ export const AppHeader = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.nav
-            className="lg:hidden mt-4 bg-[#1A1A1A] rounded-2xl p-6"
+            className="xl:hidden mt-4 bg-[#1A1A1A] rounded-2xl p-6"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
@@ -160,6 +160,10 @@ const navLinks = [
   {
     title: "About",
     path: "/about-us",
+  },
+  {
+    title: "FAQ",
+    path: "/faq",
   },
   // {
   //   title: "Alumni",

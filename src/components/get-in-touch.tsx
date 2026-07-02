@@ -54,18 +54,18 @@ export const GetInTouch = () => {
 
   const socialIcons = [
     {
-      href: "https://www.tiktok.com/@bankiffyaccelerat?_r=1&_t=ZS-930UZTfC3qD",
+      href: "https://www.tiktok.com/@bankiffyaccelerator?_r=1&_t=ZS-97hB8ybnTii",
       icon: (
         <svg
           width="23"
-          height="22"
-          viewBox="0 0 23 22"
+          height="23"
+          viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5 md:w-[23px] md:h-[22px]"
+          className="w-5 h-5 md:w-[23px] md:h-[23px]"
         >
           <path
-            d="M22.4359 10.9908C22.4359 4.92041 17.414 0 11.2179 0C5.0219 0 0 4.92041 0 10.9908C0 16.4778 4.10128 21.0246 9.46496 21.849V14.1684H6.61709V10.9901H9.46496V8.5692C9.46496 5.81476 11.1394 4.29261 13.7024 4.29261C14.9288 4.29261 16.2137 4.50746 16.2137 4.50746V7.21237H14.798C13.4047 7.21237 12.9709 8.06011 12.9709 8.92971V10.9908H16.0821L15.5847 14.1677H12.9709V21.849C18.3346 21.0246 22.4359 16.4778 22.4359 10.9908Z"
+            d="M16.6 5.82C15.86 4.97 15.45 3.88 15.45 2.75H12.17V15.83C12.14 17.25 10.98 18.38 9.56 18.38C8.72 18.38 7.94 17.97 7.45 17.29C6.96 16.62 6.82 15.76 7.07 14.96C7.32 14.16 7.93 13.53 8.73 13.26C9.25 13.09 9.81 13.08 10.33 13.24V9.9C9.25 9.75 8.15 9.94 7.17 10.45C6.18 10.97 5.39 11.79 4.92 12.8C4.44 13.82 4.31 14.97 4.55 16.06C4.79 17.16 5.38 18.15 6.24 18.87C7.1 19.6 8.18 20 9.31 20C12.73 20 15.45 17.31 15.45 13.94V8.14C16.78 9.09 18.37 9.61 20 9.61V6.34C18.75 6.34 17.56 6.16 16.6 5.82Z"
             fill="white"
           />
         </svg>
@@ -158,7 +158,7 @@ export const GetInTouch = () => {
         >
           <div className="md:flex-[0.45]">
             <motion.h2
-              className="text-2xl md:text-3xl lg:text-[3.125rem] font-bold leading-[100%] mb-4 md:mb-7"
+              className="text-2xl md:text-2xl lg:text-3xl xl:text-[3.125rem] font-bold leading-[100%] mb-4 md:mb-7"
               variants={itemVariants}
             >
               We are here to help you get started

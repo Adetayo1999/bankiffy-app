@@ -68,7 +68,7 @@ export const ALumniNetwork = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-[6.25rem] font-bold leading-[100%]"
+          className="text-4xl sm:text-5xl md:text-4xl lg:text-6xl xl:text-[6.25rem] font-bold leading-[100%]"
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.6, delay: 0.1 }}

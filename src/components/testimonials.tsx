@@ -93,7 +93,7 @@ export const Testimonials = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.h2
-          className="text-2xl md:text-3xl lg:text-[3.125rem] text-white font-bold"
+          className="text-2xl md:text-2xl lg:text-3xl xl:text-[3.125rem] text-white font-bold"
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.6 }}
@@ -185,7 +185,7 @@ const TestimonialCard: React.FC<TestimonialType & { index: number }> = (
 ) => {
   return (
     <motion.div
-      className="bg-brand h-72 md:h-80 lg:h-[27.688rem] w-72 sm:w-80 md:w-96 lg:w-125 shrink-0 rounded-2xl md:rounded-[3.125rem] px-6 md:px-10 lg:px-15 py-8 md:py-12 lg:py-17.5 flex flex-col justify-between text-white"
+      className="bg-brand h-72 md:h-80 xl:h-[27.688rem] w-72 sm:w-80 md:w-96 xl:w-125 shrink-0 rounded-2xl md:rounded-[3.125rem] px-6 md:px-10 xl:px-15 py-8 md:py-12 xl:py-17.5 flex flex-col justify-between text-white"
       variants={cardVariants}
       whileHover={{
         y: -10,

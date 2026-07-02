@@ -36,9 +36,9 @@ export const Agenda = () => {
     {
       week: "Week 1",
       classes: "2 Classes",
-      title: "Business Model & Growth",
+      title: "Fintech Foundation & Business Model",
       description:
-        "Learn to build scalable fintech ventures with practical tools like the Business Model Canvas, marketing strategies, and growth planning—empowering sustainable expansion and economic impact.",
+        "Understanding fintech, business models, target markets and revenue generation.",
     },
     {
       week: "Week 2",
@@ -50,10 +50,9 @@ export const Agenda = () => {
     {
       week: "Week 3",
       classes: "2 Classes",
-      title:
-        "Growth, Distribution & User AcquWeek 1: Fintech Foundation & Business Modelisition",
+      title: "Growth, Distribution & User Acquisition",
       description:
-        "Prepare to attract funding with strategies for local investment, traction-building, non-equity funding, and effective investor pitching.",
+        "Customer acquisition, retention, distribution strategies and growth.",
     },
     {
       week: "Week 4",
@@ -61,7 +60,7 @@ export const Agenda = () => {
       title: "Platform Setup & Go-live",
       description:
         "Get your white-label fintech live on Fuspay with guided setup, customization, user management, and operational training to start onboarding users and earning KPI-driven grants.",
-      hasButton: true,
+      hasButton: false,
     },
   ];
 
@@ -74,7 +73,7 @@ export const Agenda = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <motion.h1
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-[6.25rem] font-bold leading-[100%]"
+          className="text-4xl sm:text-5xl md:text-4xl lg:text-6xl xl:text-[6.25rem] font-bold leading-[100%]"
           initial={{ opacity: 0, x: -50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -100,13 +99,13 @@ export const Agenda = () => {
       </motion.div>
 
       <motion.div
-        className="bg-[#1C1A1A] px-6 md:px-12 lg:px-[6.438rem] py-8 md:py-12 lg:py-19 flex flex-col gap-y-8 md:gap-y-12 lg:gap-y-15 rounded-2xl md:rounded-[3.125em] relative overflow-hidden"
+        className="bg-[#1C1A1A] px-6 md:px-12 xl:px-[6.438rem] py-8 md:py-12 xl:py-19 flex flex-col gap-y-8 md:gap-y-12 xl:gap-y-15 rounded-2xl md:rounded-[3.125em] relative overflow-hidden"
         initial={{ opacity: 0, y: 50 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ duration: 0.7, delay: 0.3 }}
       >
         <motion.div
-          className="absolute left-0 -bottom-10 hidden md:block"
+          className="absolute left-0 -bottom-10 hidden xl:block"
           initial={{ opacity: 0, rotate: -20, scale: 0.8 }}
           animate={
             isInView
@@ -137,7 +136,11 @@ export const Agenda = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stopColor="var(--brand-primary)" />
-                <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
+                <stop
+                  offset="1"
+                  stopColor="var(--brand-primary)"
+                  stopOpacity="0"
+                />
               </linearGradient>
             </defs>
           </svg>

@@ -73,7 +73,7 @@ export const AlumniBanner = () => {
 
         <div className="relative z-100">
           <motion.h1
-            className="mb-4 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[5.875rem]"
+            className="mb-4 font-bold text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[5.875rem]"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}

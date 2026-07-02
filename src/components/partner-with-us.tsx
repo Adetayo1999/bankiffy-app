@@ -41,7 +41,7 @@ export const PartnerWithUs = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.h1
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-[5rem] font-bold leading-[100%]"
+          className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[5rem] font-bold leading-[100%]"
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -54,16 +54,13 @@ export const PartnerWithUs = () => {
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <motion.button
+          <motion.a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdKSKzxPAbIXdQvMIy3ffbb9JS3TuumL3pFTMtIJsfFqcCt6w/formResponse"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-8 md:px-12"
             whileHover={brandMotion.buttonHover}
             whileTap={brandMotion.buttonTap}
-            onClick={() => {
-              window.open(
-                "https://docs.google.com/forms/d/e/1FAIpQLSfuxOV8iwqG8cO2LbKZG0zO6dGofOP3LdhCBhTmi3pbNg4LYw/viewform?usp=preview",
-                "_blank",
-              );
-            }}
           >
             <span className="text-base md:text-[1.2rem] font-bold">
               Become a partner
@@ -92,12 +89,12 @@ export const PartnerWithUs = () => {
                 />
               </svg>
             </motion.span>
-          </motion.button>
+          </motion.a>
         </motion.div>
       </motion.div>
 
       <motion.div
-        className="bg-[#1C1A1A] px-6 md:px-12 lg:px-[6.438rem] py-8 md:py-12 lg:py-19 flex flex-col gap-y-10 md:gap-y-16 lg:gap-y-24 rounded-2xl md:rounded-[3.125em] relative overflow-hidden"
+        className="bg-[#1C1A1A] px-6 md:px-12 xl:px-[6.438rem] py-8 md:py-12 xl:py-19 flex flex-col gap-y-10 md:gap-y-16 xl:gap-y-24 rounded-2xl md:rounded-[3.125em] relative overflow-hidden"
         initial={{ opacity: 0, y: 50, scale: 0.98 }}
         animate={
           isInView
@@ -108,7 +105,7 @@ export const PartnerWithUs = () => {
         whileHover={{ boxShadow: "0 25px 60px rgba(0, 0, 0, 0.3)" }}
       >
         <motion.div
-          className="absolute left-0 -bottom-10 hidden md:block"
+          className="absolute left-0 -bottom-10 hidden xl:block"
           initial={{ opacity: 0, scale: 0.5, rotate: -20 }}
           animate={
             isInView
@@ -141,7 +138,11 @@ export const PartnerWithUs = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stopColor="var(--brand-primary)" />
-                <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
+                <stop
+                  offset="1"
+                  stopColor="var(--brand-primary)"
+                  stopOpacity="0"
+                />
               </linearGradient>
             </defs>
           </motion.svg>
@@ -213,7 +214,7 @@ export const PartnerWithUs = () => {
               and watch the startup pitch competition. The event closes with a
               visionary keynote and final networking sessions.
             </p>
-            <motion.button
+            {/* <motion.button
               className="btn-primary rounded-full flex justify-center items-center gap-x-3 md:gap-x-4 w-full py-3 md:py-4 px-6 md:px-12"
               whileHover={brandMotion.buttonHover}
               whileTap={brandMotion.buttonTap}
@@ -245,7 +246,7 @@ export const PartnerWithUs = () => {
                   />
                 </svg>
               </motion.span>
-            </motion.button>
+            </motion.button> */}
           </motion.div>
         </motion.div>
       </motion.div>

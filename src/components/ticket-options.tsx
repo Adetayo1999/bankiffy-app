@@ -88,7 +88,7 @@ export const TicketOptions = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.h1
-          className="text-2xl md:text-3xl lg:text-[3.125rem] font-bold leading-tight lg:leading-[0%]"
+          className="text-2xl md:text-3xl xl:text-[3.125rem] font-bold leading-tight"
           initial={{ opacity: 0, x: -30 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.6 }}
@@ -107,7 +107,7 @@ export const TicketOptions = () => {
       </motion.div>
 
       <motion.div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-x-10"
+        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-x-10"
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
@@ -117,7 +117,7 @@ export const TicketOptions = () => {
             key={index}
             className={`${
               ticket.isPrimary ? "bg-brand" : "border border-white"
-            } rounded-2xl md:rounded-[3.125rem] min-h-80 md:min-h-96 lg:min-h-123.5 p-6 md:p-10 lg:p-15 text-white flex flex-col ${
+            } rounded-2xl md:rounded-[3.125rem] min-h-80 md:min-h-96 xl:min-h-123.5 p-6 md:p-10 xl:p-15 text-white flex flex-col ${
               ticket.isPrimary ? "justify-between" : ""
             } group`}
             variants={cardVariants}
@@ -131,7 +131,7 @@ export const TicketOptions = () => {
             }}
           >
             <motion.h1
-              className="font-bold text-3xl md:text-4xl lg:text-[3.75rem] leading-[100%] mb-4 md:mb-6"
+              className="font-bold text-3xl md:text-3xl lg:text-4xl xl:text-[3.75rem] leading-[100%] mb-4 md:mb-6"
               variants={amountVariants}
             >
               {ticket.amount1}
@@ -159,7 +159,7 @@ export const TicketOptions = () => {
                 </motion.h4>
 
                 <motion.h1
-                  className="font-bold text-3xl md:text-4xl lg:text-[3.75rem] leading-[100%] mb-4 md:mb-6"
+                  className="font-bold text-3xl md:text-3xl lg:text-4xl xl:text-[3.75rem] leading-[100%] mb-4 md:mb-6"
                   variants={amountVariants}
                 >
                   {ticket.amount2}

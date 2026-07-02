@@ -31,7 +31,7 @@ export const OurMentors = () => {
         transition={{ duration: 0.6 }}
       >
         <motion.h1
-          className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-[6.25rem] leading-[100%]"
+          className="font-bold text-4xl sm:text-5xl md:text-4xl lg:text-6xl xl:text-[6.25rem] leading-[100%]"
           initial={{ opacity: 0, x: -50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] }}
