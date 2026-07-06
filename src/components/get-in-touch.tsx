@@ -184,7 +184,7 @@ export const GetInTouch = () => {
                   +1(213) 905 7434
                 </p>
                 <p className="text-sm md:text-base lg:text-xl">
-                  +234 818 1118 885
+                  +234 818 111 8883
                 </p>
               </div>
             </motion.div>
