@@ -177,7 +177,7 @@ export const RegisterNow = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            APPLICATION OPENS FROM 30TH JUNE UNTIL
+            APPLICATION OPENS FROM 15TH JULY UNTIL
           </motion.p>
           <motion.p
             className="text-sm md:text-base lg:text-[1.5rem]"
