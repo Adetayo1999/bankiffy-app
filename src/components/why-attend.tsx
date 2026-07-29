@@ -87,7 +87,7 @@ export const WhyAttendComponent = () => {
         <WhyAttendCard
           idx={1}
           description="Application opens. Submit your application for review. Early submission is advised."
-          title="July 15 to July 31"
+          title="July 15 to August 15"
         />
         <WhyAttendCard
           idx={2}

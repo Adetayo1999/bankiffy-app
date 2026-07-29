@@ -55,8 +55,8 @@ export const RegisterNow = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // Target date: July 31st, 2026 at 11:59 PM WAT (UTC+1)
-  const targetDate = useMemo(() => new Date("2026-07-31T23:59:00+01:00"), []);
+  // Target date: August 15th, 2026 at 11:59 PM WAT (UTC+1)
+  const targetDate = useMemo(() => new Date("2026-08-15T23:59:00+01:00"), []);
 
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
@@ -185,7 +185,7 @@ export const RegisterNow = () => {
             animate={isInView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ delay: 0.5 }}
           >
-            APPLICATION CLOSES ON THE 31ST JULY 2026
+            APPLICATION CLOSES ON THE 15TH AUGUST 2026
           </motion.p>
 
           <motion.div
@@ -291,7 +291,11 @@ export const RegisterNow = () => {
                 gradientUnits="userSpaceOnUse"
               >
                 <stop stopColor="var(--brand-primary)" />
-                <stop offset="1" stopColor="var(--brand-primary)" stopOpacity="0" />
+                <stop
+                  offset="1"
+                  stopColor="var(--brand-primary)"
+                  stopOpacity="0"
+                />
               </linearGradient>
             </defs>
           </motion.svg>

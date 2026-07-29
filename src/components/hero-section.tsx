@@ -144,7 +144,7 @@ export const HeroSection = () => {
             className="text-sm md:text-base lg:text-lg xl:text-[1.375rem] font-bold"
             variants={itemVariants}
           >
-            Opens → July 15 to July 31, 2026
+            Opens → July 15 to August 15, 2026
           </motion.p>
         </motion.div>
 
